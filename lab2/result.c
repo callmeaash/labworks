@@ -7,6 +7,11 @@ int main(void)
     printf("Enter the mark of Math, FA, DL, CS, English : ");
     scanf("%f %f %f %f %f", &m , &f, &d, &c, &e);
 
+    if (m < 40 || f < 40 || d < 40 || c < 40 || e < 40)
+    {
+        printf("Fail");
+        return 1;
+    }
     per = ((m + f + d + c + e) / 500) * 100;
 
     if (per > 100 || per < 0)

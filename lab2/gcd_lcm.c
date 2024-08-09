@@ -12,7 +12,7 @@ int main(void)
     lcm = find_lcm(a, b, gcd);
 
     printf("GCD: %i\n", gcd);
-    printf("LC: %i\n", lcm);
+    printf("LCM: %i\n", lcm);
 
 }
 

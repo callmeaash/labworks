@@ -1,10 +1,11 @@
 #include <stdio.h>
 
-int main(){
+int main()
+{
     int sales;
     float comission;
-    printf("Enter total sales?\t");
-    scanf("%d",&sales);
+    printf("Enter total sales: ");
+    scanf("%i",&sales);
     
     if(sales > 0 && sales <= 5000){
       comission = sales * 0.01;
@@ -23,7 +24,7 @@ int main(){
     else
     {
       printf("Invalid Sales Data");
-      return 0;
+      return 1;
     }
     
     printf("Comission is %.2f",comission);
