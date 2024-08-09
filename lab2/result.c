@@ -17,7 +17,7 @@ int main(void)
     if (per > 100 || per < 0)
     {
         printf("Invalid\n");
-        return 1;
+        return 2;
     }
     else
     {
