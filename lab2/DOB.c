@@ -2,12 +2,11 @@
 
 int main(void)
 {
-    int y,l,days;
-    printf("Enter your age: ");
-    scanf("%i", &y);
+    int y,m,d,l,days;
+    printf("Enter your age(y m d ): ");
+    scanf("%i %i %i", &y, &m, &d);
 
-    l = y / 4;
-    days = (y*365) + l;
+    days = y*365 + m*30 + d;
 
     printf("Days Lived: %i\n", days);
 
