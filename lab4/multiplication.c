@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 void get_matrix_values(int r, int c, int matrix[r][c]);
-void get_matrix_multiplication(int r1, int c2, int r2, int c1, int mul[r1][c2],int matrix1[r1][c1],int matrix2[r2][c2]);
+void get_matrix_multiplication(int r1, int c1, int r2, int c2, int mul[r1][c2],int matrix1[r1][c1],int matrix2[r2][c2]);
 
 int main(void)
 {
