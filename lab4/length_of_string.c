@@ -5,9 +5,9 @@ int main(void)
 {
     char str[20];
     printf("Enter a string: ");
-    scanf("%s", str);
+    fgets(str, sizeof(str), stdin);
     // Using builtin function
-    printf("Length of string is %i\n", strlen(str));
+    printf("Length of string (builtin fun): %i\n", strlen(str));
 
     // Without using builtin function
     int i = 0, l = 0;
@@ -17,5 +17,5 @@ int main(void)
         i++;
     }
 
-    printf("Length of string is %i\n", l);
+    printf("Length of string is (user-defn): %i\n", l);
 }

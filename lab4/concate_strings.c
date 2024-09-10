@@ -6,10 +6,9 @@ int main(void)
     char str1[20], str2[20];
     printf("Enter first string: ");
     scanf("%s", str1);
-    getchar();
 
     printf("Enter second string: ");
-    fgets(str2, sizeof(str2), stdin);
+    scanf("%s", str2);
 
     strcat(str1, str2);
     printf("Concated string: %s", str1);
